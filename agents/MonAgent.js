@@ -39,24 +39,30 @@ export default SocketAgent(function () {
 				switch (element) {
 					case 0 :
 						celly = y - 1;
+						break;
 					case 1 :
 						celly = y;
+						break;
 					case 2:
 						celly = y + 1;
+						break;
 				}
 				console.log("elemnent2: "+element2)
 				switch (element2) {
 					case 0:
 						var cellx = x - 1;
 						console.log("elelment 2 = 0 ",cellx);
+						break;
 					case 1:
 						console.log("elelment 2 = 1 ", cellx);
 						var cellx = x;
+						break;
 					case 2:
 						console.log("elelment 2 = 2 ", cellx);
 						var cellx = x + 1;
+						break;
 				}
-				console.log("Coordoné x y cellule " + cellx + " " + celly)
+				console.log("CoordonÃ© x y cellule " + cellx + " " + celly)
 			}
 		}
 		//for (var i = 0; i < marray.length; i++) {
