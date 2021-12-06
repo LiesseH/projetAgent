@@ -16,24 +16,47 @@ export default SocketAgent(function () {
 	// rajouter ici les variable qui dure au dela de chaque action
 	// en, d'autres termes qui reste pendant toute la vie de l'agent.
 
-	var map = [];
-	var x, y = 0;
+	
+	let x = 0;
+	let	y = 0;
 	var marray = [];
-	var maCase;
+	var map;
+	var cellx;
+	var celly;
 	// fonction qui contient la logique de l'agent
 	return function (sendMessage, messages) {
 		//debut de l'action de l'agent
 
-		
-		//marray = messages.map(parseMessage)[0].date
+		//console.log(parseMessage(messages))
+		marray = messages.map(parseMessage)[0].data
 
 
-		//console.log(marray[0])
+		//console.log(marray)
 		for (var element in marray) {
-			
-			for (var element2 in marray) {
-				//console.log(marray[element][element2])
-				maCase.map 
+			//console.log("elem1 " + element)
+			for (var element2 in marray[element]) {
+				console.log(marray[element][element2]);
+				switch (element) {
+					case 0 :
+						celly = y - 1;
+					case 1 :
+						celly = y;
+					case 2:
+						celly = y + 1;
+				}
+				console.log("elemnent2: "+element2)
+				switch (element2) {
+					case 0:
+						var cellx = x - 1;
+						console.log("elelment 2 = 0 ",cellx);
+					case 1:
+						console.log("elelment 2 = 1 ", cellx);
+						var cellx = x;
+					case 2:
+						console.log("elelment 2 = 2 ", cellx);
+						var cellx = x + 1;
+				}
+				console.log("Coordoné x y cellule " + cellx + " " + celly)
 			}
 		}
 		//for (var i = 0; i < marray.length; i++) {
