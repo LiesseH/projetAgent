@@ -46,6 +46,9 @@ export default SocketAgent(function () {
 					case 2:
 						celly = y + 1;
 						break;
+					default:
+						console.log("default");
+						break;
 				}
 				console.log("elemnent2: "+element2)
 				switch (element2) {
@@ -60,6 +63,9 @@ export default SocketAgent(function () {
 					case 2:
 						console.log("elelment 2 = 2 ", cellx);
 						var cellx = x + 1;
+						break;
+					default:
+						console.log("default");
 						break;
 				}
 				console.log("Coordoné x y cellule " + cellx + " " + celly)
