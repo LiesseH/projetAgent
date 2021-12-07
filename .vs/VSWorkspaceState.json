@@ -2,8 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\agents",
-    "\\maps",
-    "\\world"
+    "\\maps"
   ],
   "SelectedNode": "\\agents\\MonAgent.js",
   "PreviewInSolutionExplorer": false
